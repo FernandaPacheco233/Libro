@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MainLibro {
+class MainLibro {
     public static void main(String[] args) {
         Libro librito = new Libro();
         String a, e;
@@ -8,22 +8,21 @@ public class MainLibro {
 
         Scanner op = new Scanner(System.in);
         System.out.print("Ingresa el Titulo del libro: ");
-        a = op.next();
+        e = op.nextLine();
+        librito.titulo = e;
         System.out.print("Ingresa el nombre del Autor: ");
-        e = op.next();
+        a = op.nextLine();
+        librito.autor = a;
         System.out.print("Ingresa el ISBN: ");
         i = op.nextInt();
+        librito.isbn = i;
         System.out.print("Ingresa El numero de paginas: ");
         o = op.nextInt();
-
-        librito.titulo = a;
-        librito.autor = e;
-        librito.isbn = i;
         librito.numpag = o;
-
+        
         librito.MostrarTitulo();
         librito.MostarAutor();
-        librito.MostrarISBN();
+        librito.MostrarIsbn();
         librito.MostarNumeroDePaginas();
         Libro libro1 = new Libro("Los locos", "Fernanda", 43, 300);
 

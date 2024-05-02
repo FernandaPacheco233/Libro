@@ -6,7 +6,7 @@ class Libro {
     }
 
     Libro(String tit, String au, int is, int num) {
-        System.out.println("titulo: " + tit + " autor: " + au + "isbn " + is + "numpag " + num);
+        System.out.println("titulo: " + tit + "   autor: " + au + "   isbn " + is + "   numpag " + num);
     }
 
     public void MostrarTitulo() {
@@ -17,7 +17,7 @@ class Libro {
         System.out.println("El autor es: " + this.autor);
     }
 
-    public void MostrarISBN() {
+    public void MostrarIsbn() {
         System.out.println("El ISBN es: " + this.isbn);
     }
 
